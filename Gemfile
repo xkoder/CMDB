@@ -7,8 +7,6 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3'
 
-gem 'ZenTest'
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -30,6 +28,7 @@ group :test do
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc8'
   gem 'factory_girl_rails', '1.0'
+  gem 'ZenTest'
   # gem 'autotest', '4.4.6'
   # gem 'autotest-rails-pure', '4.1.2'
   # gem 'autotest-fsevent', '0.2.4'
