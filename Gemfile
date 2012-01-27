@@ -35,6 +35,12 @@ group :test do
   # gem 'autotest-growl', '0.2.9'
 end
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
