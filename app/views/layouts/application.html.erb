@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>StaticPages | <%= @title %></title>
+<title><%= title %></title>
 <%= csrf_meta_tag %>
+<%= stylesheet_link_tag 'stylesheets/blueprint/screen', :media => 'screen' %>
+<%= stylesheet_link_tag 'stylesheets/blueprint/print', :media => 'print' %>
 </head>
 
 <body>

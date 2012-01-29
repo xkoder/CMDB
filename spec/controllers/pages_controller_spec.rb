@@ -2,6 +2,11 @@ require 'spec_helper'
 
 describe PagesController do
 render_views
+
+  before(:each) do
+    @basetitle = StaticPages
+  end
+
   describe "GET 'home'" do
     it "should be successful" do
       get 'home'
@@ -10,7 +15,7 @@ render_views
     
     it "should have right title" do
       get 'home'
-      response.should have_selector("title", :content => "StaticPages | Home")
+      response.should have_selector("title", :content => "#{@basetitle} | Home")
     end  
     it "should have non blank body" do
       get 'home'
@@ -26,7 +31,7 @@ render_views
     
     it "should have right title" do
       get 'contact'
-      response.should have_selector("title", :content => "StaticPages | Contact")
+      response.should have_selector("title", :content => "#{@basetitle} | Contact")
     end  
   end
 
@@ -35,9 +40,10 @@ render_views
       get 'about'
       response.should be_success
     end
-        it "should have right title" do
+    
+    it "should have right title" do
       get 'about'
-      response.should have_selector("title", :content => "StaticPages | About")
+      response.should have_selector("title", :content => "#{@basetitle} | About")
     end  
   end
 

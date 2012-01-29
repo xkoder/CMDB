@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
+require "autotest/growl"
+require "autotest/restart"
+require 'redgreen/autotest'
+require "test_notifier/autotest"
 def self.notify title, msg, img, pri='low', time=3000
 `notify-send -i #{img} -u #{pri} -t #{time} '#{msg}'`
 end
