@@ -43,6 +43,7 @@ describe UsersController do
   end
 
   describe "GET 'new'" do
+
     it "returns http success" do
       get :new
       response.should be_success
@@ -52,6 +53,7 @@ describe UsersController do
       get :new
       response.should have_selector("title",  :content => "Sign up")
     end
+    
   end
 
 end
