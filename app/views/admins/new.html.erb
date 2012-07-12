@@ -1,0 +1,65 @@
+<h1>New Server</h1>
+
+<%= form_for(@admin) do |f| %>
+	<div class ="field">
+		<%= f.label      :firstname %> </br>
+		<%= f.text_field :firstname %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :lastname %> </br>
+		<%= f.text_field :lastname %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :email %> </br>
+		<%= f.text_field :email %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :PersonalEmail %> </br>
+		<%= f.text_field :email_personal %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :OtherEmail %> </br>
+		<%= f.text_field :email_other %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :OfficePhone %> </br>
+		<%= f.text_field :phone %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :PersonalPhone %> </br>
+		<%= f.text_field :mobile %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :OtherPhone %> </br>
+		<%= f.text_field :phone_other %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :Pager %> </br>
+		<%= f.text_field :pager %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :Fax %> </br>
+		<%= f.text_field :fax %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :PeopleSoftID %> </br>
+		<%= f.text_field :ps_id %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :CougarnetID %> </br>
+		<%= f.text_field :cn_id %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :Role %> </br>
+		<%= f.text_field :role %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :Location %> </br>
+		<%= f.text_field :location %> </br>
+	</div>
+	<div class ="actions">
+		<%= f.submit     "Create New Admin" %> </br>
+	</div>
+
+
+<% end %>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

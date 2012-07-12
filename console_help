@@ -1,0 +1,9 @@
+server = Server.find(1)
+server.primary_admin
+server.secondary_admin
+server.applics
+ser = app.server
+
+                                                                                                                                                                                                                                                                                             
+
+

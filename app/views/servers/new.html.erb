@@ -1,0 +1,41 @@
+<h1>New Server</h1>
+
+<%= form_for(@server) do |f| %>
+	<div class ="field">
+		<%= f.label      :name %> </br>
+		<%= f.text_field :name %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :primary_admin_id %> </br>
+		<%= f.text_field :primary_admin_id %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :secondary_admin_id %> </br>
+		<%= f.text_field :secondary_admin_id %> </br>
+	</div>	
+	<div class ="field">
+		<%= f.label      :status %> </br>
+		<%= f.text_field :status %> </br>
+	</div>
+	<div class ="field">
+		<%= f.label      :notes %> </br>
+		<%= f.text_field :notes %> </br>
+	</div>	
+	<div class ="field">
+		<%= f.label      :status %> </br>
+		<%= f.text_field :status %> </br>
+	</div>	
+	<div class ="field">
+		<%= f.label      :hpsim_monitered %> </br>
+		<%= f.text_field :hpsim_monitered %> </br>
+	</div>	
+	<div class ="field">
+		<%= f.label      :spectrum_monitered %> </br>
+		<%= f.text_field :spectrum_monitered %> </br>
+	</div>
+	<div class ="actions">
+		<%= f.submit     "Create New Server" %> </br>
+	</div>
+
+
+<% end %>

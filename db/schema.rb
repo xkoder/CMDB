@@ -11,7 +11,53 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120210204249) do
+ActiveRecord::Schema.define(:version => 20120711044125) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "email"
+    t.string   "email_personal"
+    t.string   "email_other"
+    t.integer  "phone"
+    t.integer  "mobile"
+    t.integer  "phone_other"
+    t.integer  "pager"
+    t.integer  "fax"
+    t.string   "cn_id"
+    t.integer  "ps_id"
+    t.string   "role"
+    t.string   "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "applics", :force => true do |t|
+    t.string   "name"
+    t.string   "status"
+    t.string   "version"
+    t.string   "description"
+    t.string   "maintwin_day"
+    t.integer  "start_time"
+    t.integer  "end_time"
+    t.integer  "server_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "servers", :force => true do |t|
+    t.string   "name"
+    t.integer  "primary_admin_id"
+    t.integer  "secondary_admin_id"
+    t.string   "email"
+    t.string   "status"
+    t.text     "notes"
+    t.string   "hpsim_monitered"
+    t.string   "spectrum_monitered"
+    t.time     "date_last_reviewed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

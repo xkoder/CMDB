@@ -3,6 +3,8 @@ StaticPages::Application.routes.draw do
   get "sessions/new"
 
   resources :users
+  resources :admins
+  resources :servers
   resources :sessions, :only => [:new, :create, :destroy]
 
   root :to => 'pages#home'
@@ -18,7 +20,11 @@ StaticPages::Application.routes.draw do
   match "/signin", :to => 'sessions#new'
 
   match "/signout", :to => 'sessions#destroy'
-      
+
+  match "/newadmin", :to => 'admins#new'
+
+  match "/newserver", :to => 'servers#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
