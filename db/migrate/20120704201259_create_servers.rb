@@ -4,7 +4,7 @@ class CreateServers < ActiveRecord::Migration
       t.string  :name
       t.integer :primary_admin_id
       t.integer :secondary_admin_id
-      t.string  :email
+      t.string  :email  #need to delete this later
       t.string  :status
       t.text    :notes
       t.string  :hpsim_monitered

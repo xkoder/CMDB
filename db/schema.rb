@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120711044125) do
+ActiveRecord::Schema.define(:version => 20120712171104) do
 
   create_table "admins", :force => true do |t|
     t.string   "firstname"
@@ -41,6 +41,41 @@ ActiveRecord::Schema.define(:version => 20120711044125) do
     t.integer  "start_time"
     t.integer  "end_time"
     t.integer  "server_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "devices", :force => true do |t|
+    t.string   "name"
+    t.string   "serial_number"
+    t.string   "service_impact"
+    t.string   "manufacturer"
+    t.string   "model"
+    t.string   "device_type"
+    t.string   "cpu_type"
+    t.string   "cpu_speed"
+    t.string   "installation_year"
+    t.string   "status"
+    t.string   "operating_system"
+    t.string   "memory"
+    t.string   "Device_Notes"
+    t.string   "asset_tag"
+    t.date     "aquisition_date"
+    t.integer  "po_number"
+    t.integer  "requisition_number"
+    t.string   "sar_system_handle"
+    t.integer  "sa_id"
+    t.integer  "location_id"
+    t.integer  "server_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "campus"
+    t.string   "building"
+    t.string   "room"
+    t.string   "rack"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
