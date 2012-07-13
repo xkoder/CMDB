@@ -4,7 +4,7 @@ module ApplicationHelper
 
   def title
 
-    basetitle = "StaticPages"
+    basetitle = "CMDB"
     if @title == nil
       basetitle
     else

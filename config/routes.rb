@@ -2,12 +2,13 @@ StaticPages::Application.routes.draw do
 
   get "sessions/new"
 
+  resources :applics
   resources :users
   resources :admins
   resources :servers
   resources :sessions, :only => [:new, :create, :destroy]
 
-  root :to => 'pages#home'
+  root :to => 'applic#home'
   
   match "/contact", :to => 'pages#contact'
   
