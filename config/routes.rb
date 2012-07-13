@@ -8,7 +8,7 @@ StaticPages::Application.routes.draw do
   resources :servers
   resources :sessions, :only => [:new, :create, :destroy]
 
-  root :to => 'applic#home'
+  root :to => 'applics#home'
   
   match "/contact", :to => 'pages#contact'
   

@@ -1,0 +1,8 @@
+<h2>Applications</h2></br>
+<% for app in @apps %>
+<ul>
+	<li>
+	<strong> <%= link_to app.name, app %> </strong>
+	</li>
+</ul>
+<% end %>

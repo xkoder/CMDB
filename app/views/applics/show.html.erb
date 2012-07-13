@@ -1,0 +1,13 @@
+
+<div id="appdetails">
+	<h3> Application Details </h3>
+	<li>	<strong> <%= @app.name %> </strong></br> </li>
+	<li>	<strong> Version: <%= @app.version %> </strong></br>	</li>
+	<li>	<strong> Status: <%= @app.status %> </strong></br>	</li>
+	<li>	<strong> Maintainence Window: <%= @app.maintwin_day %> : <%= @app.start_time %>-<%= @app.end_time %></strong></br>	</li>
+</div>
+</br></br>
+<div id="depdetails">
+	<h3> Department Details </h3>
+	<li>	<strong> <%= @app.department.name %> </strong></br> </li>
+</div>
