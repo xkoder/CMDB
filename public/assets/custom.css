@@ -1,5 +1,5 @@
 .container {
-	width: 710px;
+	width: 900px;
 }
 
 body {
@@ -182,4 +182,35 @@ ul.users {
 
 ul.users li {
   list-style: none;
+}
+
+.detailsbox   {
+  width: 400px;
+  border: 2px solid lightblue;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: #09c;
+}
+
+.detailsbox ul li {
+  list-style-type: none;
+  display: list-item;
+  padding: 0.2em 0;
+}
+
+.detailsbox1 {
+  width: 400px;
+  border: 2px solid lightblue;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: #09c;
+  float: right;
+}
+
+.detailsbox1 ul li {
+  list-style-type: none;
+  display: list-item;
+  padding: 0.2em 0;
 }
