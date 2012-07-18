@@ -7,31 +7,45 @@
 		<li>	<strong> Maintainence Window: <%= @app.maintwin_day %> : <%= @app.start_time %>-<%= @app.end_time %></strong></br>	</li>
 	</ul>
 </div>
-</br></br>
 <div id="depdetails" class="detailsbox round">
 	<h3> Department Details </h3>
 	<ul>
 		<li>	<strong> <%= @app.department.name %> </strong></br> </li>
 	</ul>
 </div>
-</br></br>
 <div id="serverdetails" class="detailsbox round">
 	<h3> Server Details </h3>
 	<ul>
-		<li>	<strong> <%= @app.server.name %> </strong></br> </li>
+		<li> Name:	<strong> <%= @app.server.name %> </strong></br> </li>
+		<li> Primary Admin:	<strong> <%= "#{@app.server.primary_admin.firstname} #{@app.server.primary_admin.lastname}" %> </strong></br> </li>
+		<li> Secondary Admin:	<strong> <%= "#{@app.server.secondary_admin.firstname} #{@app.server.secondary_admin.lastname}" %> </strong></br> </li>
 	</ul>
 </div>
-</br></br>
 <div id="hardwaredetails" class="detailsbox round">
 	<h3> Hardware Details </h3>
 	<ul>
-		<li>	<strong> <%= @app.server.devices.first.name %> </strong></br> </li>
+		<li>	<strong> Name: <%= @app.server.devices.first.name %> </strong></br> </li>
+		<li>	<strong> Manufacturer: <%= @app.server.devices.first.manufacturer %> </strong></br> </li>
+		<li>	<strong> Type: <%= @app.server.devices.first.cpu_type %> </strong></br> </li>
+		<li>	<strong> Memory: <%= @app.server.devices.first.memory %> </strong></br> </li>
 	</ul>
 </div>
-</br></br>
 <div id="locationdetails" class="detailsbox round">
 	<h3> Location Details </h3>
 	<ul>
-		<li>	<strong> <%= @app.server.devices.first.location.campus %> </strong></br> </li>
+		<li>	<strong> Campus:<%= @app.server.devices.first.location.campus %> </strong></br> </li>
+		<li>	<strong> Building:<%= @app.server.devices.first.location.building %> </strong></br> </li>
+		<li>	<strong> Rack:<%= @app.server.devices.first.location.rack %> </strong></br> </li>
+	</ul>
+</div>
+
+<div id="powerdetails" class="detailsbox round">
+	<h3> Power Details </h3>
+	<ul>
+		<li>	<strong> PDU/FPC:<%= @app.server.devices.first.location.cbreakers.first.pdu.pdunumber %> </strong></br> </li>
+		<li>	<strong> Panel:<%= @app.server.devices.first.location.cbreakers.first.pdu.panelnumber %> </strong></br> </li>
+		<li>	<strong> UPS Feed:<%= @app.server.devices.first.location.cbreakers.first.pdu.upsfeed %> </strong></br> </li>
+		<li>	<strong> CB :<%= @app.server.devices.first.location.cbreakers.first.cbindex %> </strong></br> </li>
+		<li>	<strong> CB Rating :<%= @app.server.devices.first.location.cbreakers.first.cbrating %> </strong></br> </li>
 	</ul>
 </div>

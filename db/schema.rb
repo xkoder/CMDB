@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120712201553) do
+ActiveRecord::Schema.define(:version => 20120716151648) do
 
   create_table "admins", :force => true do |t|
     t.string   "firstname"
@@ -49,6 +49,18 @@ ActiveRecord::Schema.define(:version => 20120712201553) do
     t.string   "customer"
     t.integer  "noof_customers"
     t.integer  "department_id"
+  end
+
+  create_table "cbreakers", :force => true do |t|
+    t.string   "cbindex"
+    t.integer  "cbrating"
+    t.string   "receptical"
+    t.string   "cableserialnumber"
+    t.integer  "volatge"
+    t.integer  "location_id"
+    t.integer  "pdu_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "departments", :force => true do |t|
@@ -100,6 +112,17 @@ ActiveRecord::Schema.define(:version => 20120712201553) do
     t.string   "description"
     t.string   "state"
     t.integer  "applic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pdus", :force => true do |t|
+    t.string   "pdunumber"
+    t.string   "panelnumber"
+    t.string   "modelnumber"
+    t.string   "manufacturer"
+    t.string   "serialnumber"
+    t.string   "upsfeed"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

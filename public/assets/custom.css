@@ -198,19 +198,3 @@ ul.users li {
   display: list-item;
   padding: 0.2em 0;
 }
-
-.detailsbox1 {
-  width: 400px;
-  border: 2px solid lightblue;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  color: #09c;
-  float: right;
-}
-
-.detailsbox1 ul li {
-  list-style-type: none;
-  display: list-item;
-  padding: 0.2em 0;
-}
